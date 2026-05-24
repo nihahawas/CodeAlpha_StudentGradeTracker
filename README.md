@@ -7,7 +7,7 @@
 ![CodeAlpha](https://img.shields.io/badge/Internship-CodeAlpha-10d9a0?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 
-A fully-featured **Java Swing GUI** application to input, manage, and analyze student grades — built as **Task 1** of the CodeAlpha Java Programming Internship.
+A fully-featured **Java Swing GUI** application to input, manage, and analyze student grades — built as **Task 3** of the CodeAlpha Java Programming Internship.
 
 </div>
 
