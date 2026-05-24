@@ -1,77 +1,126 @@
-# StudentGradeTracker — Java | CodeAlpha Task 1
+# 🎓 Student Grade Tracker — CodeAlpha Java Internship | Task 3
 
-A fully-featured **Java Swing GUI** Student Grade Tracker built for the CodeAlpha Java Programming Internship.
+<div align="center">
+
+![Java](https://img.shields.io/badge/Java-17+-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Swing](https://img.shields.io/badge/GUI-Java%20Swing-6366f1?style=for-the-badge)
+![CodeAlpha](https://img.shields.io/badge/Internship-CodeAlpha-10d9a0?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
+
+A fully-featured **Java Swing GUI** application to input, manage, and analyze student grades — built as **Task 1** of the CodeAlpha Java Programming Internship.
+
+</div>
 
 ---
 
-## ✅ CodeAlpha Requirements Covered
+## 📸 Features
 
-| Requirement | Implementation |
+### 🖥️ Dashboard Tab
+- Total number of students
+- Class average score
+- Highest & lowest average in class
+- Passing vs failing student count
+
+### 📋 Students Tab
+- Full grade table with all 5 subjects per student
+- Color-coded **Grade** (A / B / C / D / F) and **Status** (Pass / Fail) columns
+- **Add**, **Edit**, and **Delete** student records
+- Input validation (names required, scores must be 0–100)
+
+### 📊 Analytics Tab
+- Per-subject class averages (Math, Science, English, History, Computer Science)
+- Full class breakdown table with total score and deviation
+- Auto-generated **Summary Report** showing:
+  - Class average
+  - Top & lowest performing students
+  - Best & weakest subject
+
+### 💾 Export
+- Export all student data to a **CSV file** via file chooser
+
+---
+
+## ✅ CodeAlpha Task Requirements — All Met
+
+| Requirement | How It's Implemented |
 |---|---|
-| Input and manage student grades | Add / Edit / Delete via dialog |
-| Calculate average, highest, lowest | Live computed per student + dashboard |
-| Arrays / ArrayLists to store data | `ArrayList<Student>` in `GradeTrackerApp` |
-| Display summary report | Analytics tab with full class report |
-| GUI-based interface | Java Swing dark-themed GUI |
+| Input and manage student grades | Add / Edit / Delete dialogs with validation |
+| Calculate average, highest, lowest scores | Computed in `Student.java` + displayed in Dashboard |
+| Use ArrayLists to store and manage data | `ArrayList<Student>` in `GradeTrackerApp.java` |
+| Display a summary report of all students | Analytics tab — formatted class summary report |
+| GUI-based interface | Java Swing — dark themed, 3-tab layout |
 
 ---
 
-## 🚀 How to Run in IntelliJ IDEA
-
-1. **File → Open** → Select the `StudentGradeTracker_Java` folder
-2. IntelliJ auto-detects it as a Java project
-3. Set JDK to **Java 17+** if prompted *(File → Project Structure → SDK)*
-4. Open `src/GradeTrackerApp.java`
-5. Click the **▶ Run** button (or `Shift + F10`)
-
----
-
-## 📁 Project Structure
+## 🗂️ Project Structure
 
 ```
-StudentGradeTracker_Java/
+CodeAlpha_StudentGradeTracker/
 ├── src/
-│   ├── GradeTrackerApp.java      ← Main window & entry point
-│   ├── Student.java              ← Model: grade logic, avg, grade, status
-│   ├── StudentTableModel.java    ← Custom JTable model
-│   └── StudentDialog.java        ← Add / Edit modal dialog
+│   ├── GradeTrackerApp.java      ← Main window, tabs, dashboard, analytics
+│   ├── Student.java              ← Model: scores, average, grade, status
+│   ├── StudentTableModel.java    ← Custom AbstractTableModel for JTable
+│   └── StudentDialog.java        ← Add / Edit modal dialog with validation
 ├── README.md
-└── .idea/                        ← IntelliJ project config
+└── .idea/                        ← IntelliJ IDEA configuration
 ```
 
 ---
 
-## ✨ Features
+## 🚀 How to Run
 
-- **Dashboard Tab** — 6 live stat cards: Total Students, Class Average, Highest Avg, Lowest Avg, Passing, Failing
-- **Students Tab** — Sortable JTable with all grades, color-coded Grade & Status columns; Edit & Delete buttons
-- **Analytics Tab** — Per-subject averages, class breakdown table, and a formatted summary report
-- **Add/Edit Modal** — Validated input dialog for name + 5 subject scores (0–100)
-- **Delete with Confirmation** — Prevents accidental deletion
-- **Export CSV** — Save all records to a `.csv` file via file chooser
+### Prerequisites
+- Java JDK **17 or higher** — [Download here](https://adoptium.net)
+- IntelliJ IDEA (Community or Ultimate)
+
+### Steps
+```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/CodeAlpha_StudentGradeTracker.git
+
+# Open in IntelliJ IDEA
+File → Open → Select the project folder
+
+# Run
+Open GradeTrackerApp.java → Click the ▶ Run button
+```
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
-| Layer       | Technology              |
-|-------------|-------------------------|
-| Language    | Java 17+                |
-| GUI         | Java Swing              |
-| Data Store  | `ArrayList<Student>`    |
-| OOP Design  | Model / View separation |
-| Build       | IntelliJ IDEA (no Maven)|
+| Layer | Technology |
+|---|---|
+| Language | Java 17+ |
+| GUI Framework | Java Swing |
+| Data Storage | `ArrayList<Student>` |
+| Architecture | OOP — Model / View separation |
+| IDE | IntelliJ IDEA |
+| Build Tool | None (plain Java) |
 
 ---
 
 ## 📊 Grade Scale
 
-| Grade | Average |
-|-------|---------|
-| A     | 90–100  |
-| B     | 75–89   |
-| C     | 60–74   |
-| D     | 45–59   |
-| F     | 0–44    |
+| Grade | Average Range | Status |
+|---|---|---|
+| **A** | 90 – 100 | Pass ✅ |
+| **B** | 75 – 89  | Pass ✅ |
+| **C** | 60 – 74  | Pass ✅ |
+| **D** | 45 – 59  | Fail ❌ |
+| **F** | 0  – 44  | Fail ❌ |
 
-Pass = Average ≥ 60
+---
+
+## 👤 Author
+
+**Your Name**
+- 🌐 LinkedIn: [linkedin.com/in/nihahawas45](https://linkedin.com/in/nihahawas45)
+- 💻 GitHub: [github.com/nihahawas](https://github.com/nihahawas)
+- 🏢 Internship: [CodeAlpha](https://www.codealpha.tech)
+
+---
+
+<div align="center">
+  Made with ❤️ as part of the <strong>CodeAlpha Java Programming Internship</strong>
+</div>
