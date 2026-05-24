@@ -1,5 +1,8 @@
 # 🎓 Student Grade Tracker — CodeAlpha Java Internship | Task 3
 
+<img width="1920" height="872" alt="Dashboard" src="https://github.com/user-attachments/assets/33b0829f-0cef-4130-9cf3-195f0a38d209" />
+
+
 <div align="center">
 
 ![Java](https://img.shields.io/badge/Java-17+-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
